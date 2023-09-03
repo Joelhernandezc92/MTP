@@ -41,6 +41,8 @@ body {
 }
 
 
+
+
 .encabezado.fondo-menu {
   background: #ffffff;
   padding: 1rem 0; 
@@ -1064,3 +1066,7 @@ form input {
   }
 
 
+
+#galeria img{
+  border-radius: 10px ;
+}
