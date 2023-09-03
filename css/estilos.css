@@ -545,11 +545,6 @@ body {
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
 
-  .servicios article:hover img {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d; }
 
   .servicios h3 a::after {
     display: none; }
@@ -1064,8 +1059,6 @@ form input {
 	color: #37a74c;
 
   }
-
-
 
 #galeria img{
   border-radius: 10px ;
