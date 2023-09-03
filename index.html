@@ -46,7 +46,19 @@
                 <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
                    <i class="fas fa-bars" aria-hidden="true"></i>
                </button>
-               <form action="#" id="bloque-buscar" class="collapse">
+               <form action="registrar-usuario.php" method="post" id="bloque-buscar" class="collapse">
+                  <div class="contenedor-bloque-buscar">
+                      <input type="text" placeholder="Buscar...">
+                      <input type="submit" value="Buscar">
+                  </div>
+                  <div class="contenedor-bloque-registro-login">
+                      <h2>Registro o inicio de sesión</h2>
+                      <input type="email" placeholder="Correo electrónico" name="correo">
+                      <input type="password" placeholder="Contraseña" name="contraseña">
+                      <input type="submit" value="Registrarse">
+                      <input type="submit" value="Iniciar sesión">
+                  </div>
+              </form>
                 <div class="contenedor-bloque-buscar">
                     <input type="text" placeholder="Buscar...">
                     <input type="submit" value="Buscar">
@@ -140,7 +152,7 @@
             <div class="row" id="imgarticle">
                 <!--Sección lateral izquierda-->
                 <article  class="col-md-4 wow bounceInLeft">
-                    <img src="assets/page fotos/FOTOS REALES/historia/historia.jpg" alt="historia">
+                    <img src="page fotos/FOTOS REALES/historia/historia.jpg" alt="historia">
                     <h3><a href="#">Historia</a></h3>
                     <p class="d-none d-md-flex">Montepiedra desarrolla todas sus actividades con los principios de la doctrina católica y con el máximo respeto hacia la libertad de las conciencias.</p>
                     <a href="historia.html" class="btn btn-light d-none d-md-flex">Más Información</a>
@@ -176,18 +188,11 @@
 
                     <img src="https://www.montepiedra.edu.ec/web/image/1634-07c28286/promocion2.jpeg" alt="imagen mtp">
                 </a>
+                
                 <a href="#">
 
-                    <img src="https://www.montepiedra.edu.ec/web/image/1633-6e01a22a/Promocion1.jpeg" alt="imagen mtp">
-                </a>
-                <a href="#">
-
-                    <img src="https://scontent.fuio1-1.fna.fbcdn.net/v/t39.30808-6/361619946_737431705058181_2775074305139480536_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=tB3rSa3faeAAX96ppjT&_nc_ht=scontent.fuio1-1.fna&oh=00_AfD2JXCn0SNf0Ve65kmycMVBuVReLEGOOWFYw5TSSgx6Iw&oe=64C34131" alt="imagen mtp">
-                </a>
-                <a href="#">
-
-                    <img src="https://scontent.fuio1-2.fna.fbcdn.net/v/t39.30808-6/362886769_742022831265735_2995504262509667791_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=YIXlDw3HP7IAX9WBBeY&_nc_ht=scontent.fuio1-2.fna&oh=00_AfB_j3t1pIxBDzVpRalu7FozG_esHGkmZ74hSzXL-IFeOA&oe=64C3E6B8" alt="imagen mtp">
-                </a>
+                  <img src="https://www.montepiedra.edu.ec/web/image/1633-6e01a22a/Promocion1.jpeg" alt="imagen mtp">
+              </a>
 
             </div>
         </div>
@@ -195,12 +200,12 @@
     <section class="alianzas">
 		<h2>Alianzas</h2>
 		<div class="alianzas-images">
-		  <a href="https://torremar.edu.ec/" target="_blank"><img src="assets/page fotos/LOGOS/torremar.gif" alt="Escudo Colegio 1"></a>
-		  <a href="https://uejacaranda.edu.ec/" target="_blank"><img src="assets/page fotos/LOGOS/jacaranda logo.png" alt="Escudo Colegio 2"></a>
+		  <a href="https://torremar.edu.ec/" target="_blank"><img src="page fotos/LOGOS/torremar.gif" alt="Escudo Colegio 1"></a>
+		  <a href="https://uejacaranda.edu.ec/" target="_blank"><img src="page fotos/LOGOS/jacaranda logo.png" alt="Escudo Colegio 2"></a>
 		  <a href="https://www.intisana.com/" target="_blank" ><img src="https://www.montepiedra.edu.ec/web/image/1046-b2502c09/intisana.jpeg" alt="Escudo Colegio 3"></a>
-		  <a href="https://uedelta.k12.ec/delta/" target="_blank"><img src="assets/page fotos/LOGOS/delta.png" alt="Escudo Colegio 4"></a>
-		  <a href="https://www.uhemisferios.edu.ec/" target="_blank"><img src="assets/page fotos/LOGOS/hemisferios logo.png" alt="Escudo Colegio 5"></a>
-		  <a href="https://colegiolospinos.ec/" target="_blank"><img class="alimargin" src="assets/page fotos/LOGOS/logo los pinos.png" alt="Escudo Colegio 6"></a>
+		  <a href="https://uedelta.k12.ec/delta/" target="_blank"><img src="page fotos/LOGOS/delta.png" alt="Escudo Colegio 4"></a>
+		  <a href="https://www.uhemisferios.edu.ec/" target="_blank"><img src="page fotos/LOGOS/hemisferios logo.png" alt="Escudo Colegio 5"></a>
+		  <a href="https://colegiolospinos.ec/" target="_blank"><img class="alimargin" src="page fotos/LOGOS/logo los pinos.png" alt="Escudo Colegio 6"></a>
 
 		</div>
 	  </section>
