@@ -1,0 +1,88 @@
+/* Estilos generales para el footer */
+footer {
+  background-color: #ffffff;
+  padding: 40px 0;
+  margin-left: 70px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex-basis: 33.33%;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section p {
+  margin-bottom: 8px;
+}
+
+.social-media-links {
+  display: flex;
+}
+
+.social-media-links li {
+  margin-right: 10px;
+}
+
+.social-media-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-section h3 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+/* Media query para ajustar el footer en pantallas pequeñas (celulares) */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap; /* Ajustamos los elementos en una sola columna */
+  }
+  
+  .footer-section {
+    flex-basis: 100%; /* Una sección en una fila */
+  }
+}

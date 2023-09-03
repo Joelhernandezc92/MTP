@@ -8,7 +8,7 @@ body {
   color: #111111; }
 
 .bienvenidos {
-  background: url("../assets/banner-image.jpg") no-repeat center top;
+  background: url("../page fotos/banner-image.JPG") no-repeat center top;
   
   color: #fff;
   background-size: cover;
@@ -592,7 +592,7 @@ body {
     font-size: 16px; }
 
   .bienvenidos {
-    background: url("../assets/banner-image.jpg") no-repeat center top;
+    background: url("../page fotos/banner-image.JPG") no-repeat center top;
     background-size: cover; }
 
   .tu-mejor-eleccion ul li {

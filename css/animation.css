@@ -1,0 +1,31 @@
+.banner {
+    position: relative;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #typing-text {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #ffffff;
+    animation: typing 3s steps(40) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
