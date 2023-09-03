@@ -64,11 +64,7 @@ body {
   margin: 0;
 }
 
-/* Estilos para las imágenes de redes sociales */
-.social-icons {
-  display: flex;
-  align-items: center;
-}
+
 
 
 #menuserv h2{
@@ -81,10 +77,6 @@ body {
   margin-bottom: 15px;
 }
 
-.alianzas{
-  background-color:rgb(220, 236, 251);
-
-}
 
 
 
@@ -672,6 +664,12 @@ body {
 	padding: 0;
 }
 
+
+.Biblioteca{
+  background-color:rgb(220, 236, 251);
+
+}
+
 .alianzas-images {
 	display: flex;
 	flex-wrap: wrap;
@@ -874,10 +872,7 @@ form #sub {
   
 
 
-  .alianzas {
 
-	padding: 20px; 
-  }
   
   .alianzas-images {
 	display: flex;
@@ -891,10 +886,28 @@ form #sub {
   }
   
   
-
+  .alianzas{
+    background-color:rgb(220, 236, 251);
+    padding: 20px; 
+  }
+  
   .alianzas h2{
 	text-align: center;
   }
+  .Biblioteca{
+    background-color:rgb(255, 255, 255);
+    padding: 20px; 
+  }
+  .Biblioteca h2{
+    text-align: center;
+    padding-top: 20px;
+    }
+  .Biblioteca img{
+    width: 100%;
+  }
+  
+    
+    
   
 
 
