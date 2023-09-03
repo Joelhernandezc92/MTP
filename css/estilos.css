@@ -721,13 +721,19 @@ form{
 	color: #fff;
 	border: 3px solid #fff;
 	box-shadow: 0px 0px 25px #222;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(6px);
 	border-radius: 10px;
 	
 }
 
-form #sub {
-	margin-top: 17px;
+
+
+form input {
+  background-color: aliceblue;
+	margin-top: 6px;
+  border-radius: 10px;
+  border-style: none;
+  
 }
 
   .content-block {
