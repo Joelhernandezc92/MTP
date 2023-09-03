@@ -37,6 +37,8 @@ body {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 
+  scroll-behavior: smooth;
+
 }
 
 
