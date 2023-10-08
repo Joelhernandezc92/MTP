@@ -123,17 +123,12 @@ body {
   background: transparent;
   color: #fff; }
 
-.boton-buscar:focus, .boton-menu:focus {
-  outline: 0; }
 
 .boton-buscar {
   margin-left: auto;
   margin-right: .8rem; }
 
-#bloque-buscar {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+
 
 .contenedor-bloque-buscar {
   display: -webkit-box;
@@ -360,17 +355,7 @@ body {
           justify-content: center;
   margin: .3rem 0; }
 
-.ultimos-proyectos .container .owl-carousel .owl-nav .owl-prev,
-.ultimos-proyectos .container .owl-carousel .owl-nav .owl-next {
-  font-size: 3rem;
-  margin: 0 .5rem;
-  color: #03734ad9;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
 
-.ultimos-proyectos .container .owl-carousel .owl-nav .owl-prev:hover,
-.ultimos-proyectos .container .owl-carousel .owl-nav .owl-next:hover {
-  color: #025939; }
 
 .piedepagina {
   background: #111111;
@@ -468,6 +453,14 @@ body {
           transform-style: preserve-3d; }
 
 @media (min-width: 768px) {
+  form{
+    padding: 2rem 30rem;
+    text-align: center;
+  
+    background-color: #141414;
+  
+    
+  }
   
   #menu-principal {
     height: auto !important;
@@ -585,6 +578,8 @@ body {
   .paginas-internas .lista-servicios .item-servicios .btn-primary {
     margin-top: auto; } }
 @media (min-width: 992px) {
+  
+
 
 
   html {
@@ -716,10 +711,10 @@ body {
 form{
 	padding: 2rem 3rem;
 	text-align: center;
-	color: #fff;
+	color: #000000;
 	border: 3px solid #fff;
-	box-shadow: 0px 0px 25px #222;
-	backdrop-filter: blur(6px);
+	box-shadow: 0px 0px 50px #000000;
+  background-color: #fff;
 	border-radius: 10px;
 	
 }
@@ -727,10 +722,10 @@ form{
 
 
 form input {
-  background-color: aliceblue;
+  background-color: none;
 	margin-top: 6px;
-  border-radius: 10px;
   border-style: none;
+
   
 }
 

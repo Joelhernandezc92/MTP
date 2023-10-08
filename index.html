@@ -14,8 +14,7 @@
 
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-
-    <!--carga de archivos css-->
+    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -24,6 +23,37 @@
     <link rel="stylesheet" href="css/events.css">
 
 <style>
+  /* Estilos para el fondo oscurecido */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Estilos para la ventana de inicio de sesión */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Estilo para el botón de cierre */
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
 
 </style>
 
@@ -40,19 +70,13 @@
                 <a href="index.html" class="logo">
                     <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
                 </a>
-                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="margin-top: 19px;"><path fill="white" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
-                </button>
+                
+                <a href="login.html"  class="boton-buscar"  >
+                  <img src="page fotos/guest-user.png"  width="40" height="40">
+                </a>
 
               <!--LOGIN NT-->
-              <form  method="post" id="bloque-buscar" class="collapse">
-                  <div class="contenedor-bloque-registro-login">
-                      <h2>Login</h2>
-                      <input type="email" placeholder="Correo electrónico" name="correo">
-                      <input type="password" placeholder="Contraseña" name="contraseña">
-                      <input class="sub" type="submit" value="Iniciar sesión">
-                  </div>
-              </form>
+
               <!--LOGIN NT-->
 
               
@@ -260,6 +284,30 @@
             });
         });
     </script>
+    <script>
+      // Obtener elementos del DOM
+const openLoginButton = document.getElementById("open-login");
+const loginModal = document.getElementById("login-modal");
+const closeLoginButton = document.getElementById("close-login");
+
+// Mostrar la ventana de inicio de sesión
+openLoginButton.addEventListener("click", () => {
+    loginModal.style.display = "block";
+});
+
+// Cerrar la ventana de inicio de sesión al hacer clic en cualquier lugar fuera de ella
+window.addEventListener("click", (event) => {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+});
+
+// Cerrar la ventana de inicio de sesión al hacer clic en el botón de cierre
+closeLoginButton.addEventListener("click", () => {
+    loginModal.style.display = "none";
+});
+
+      </script>
     <script src="js/wow.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/sitio.js"></script>
