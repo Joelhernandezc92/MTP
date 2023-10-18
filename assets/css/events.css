@@ -1,0 +1,153 @@
+.eventos {
+    background-color: #f2f9f6; /* Color de fondo de la clase eventos */
+    padding: 20px;
+    text-align: center; /* Centra todo el contenido */
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .evento {
+    display: inline-block;
+    margin: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .fecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d2f0d9; /* Color de fondo del círculo del número */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .numero {
+    display: block;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  
+  .fecha.mes {
+    display: none; /* Oculta el mes */
+  }
+  
+  .hora {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .descripcion {
+    margin-bottom: 20px;
+  }
+  
+
+
+  .evento {
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 1s ease-in-out; /* Transición suave de la opacidad */
+  }
+  
+  .evento.visible {
+    opacity: 1; /* Mostrar cuando es visible */
+  }
+  
+
+
+  .banner img {
+    width: 100%;
+    filter: blur(8px) brightness(40%);
+  }
+
+
+
+/* Estilos para el contenedor principal de la sección */
+.menu-of {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Estilos para el contenedor que envuelve los elementos del menú */
+.menu-container-of {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada item del menú */
+.menu-item-of {
+  flex-basis: calc(25% - 20px); /* Mostrar hasta 4 items por fila con espaciado */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenido de cada item del menú */
+.menu-content-of {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilos para las imágenes del menú */
+.menu-item-of img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los títulos del menú */
+.menu-item-of h3 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los botones del menú */
+.menu-button-of {
+  padding: 10px 20px;
+  background-color: #3aa74c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el fondo oscuro que aparece al hacer hover en el contenido */
+.menu-content-of::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Agregamos una transición para suavizar el efecto */
+}
+
+/* Estilos para el hover del contenido */
+.menu-content-of:hover::before {
+  opacity: 0; /* Ocultamos el fondo oscuro al hacer hover */
+}
+
+/* Media Query para ajustar el número de items por fila en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .menu-item-of {
+    flex-basis: calc(50% - 20px); /* Mostrar 2 items por fila con espaciado */
+  }
+}
+
+/* Media Query para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+  .menu-item-of {
+    flex-basis: calc(100% - 20px); /* Mostrar 1 item por fila con espaciado */
+  }
+}
+

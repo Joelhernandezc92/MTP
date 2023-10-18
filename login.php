@@ -2,7 +2,7 @@
     session_start();
 
     if(isset($_SESSION['usuario'])){
-        header("location: home.php");
+        header("location: index.php");
     }
 
     
@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="css/log.css">
 
 
-<meta property="og:title" content="Montepiedra">
+<meta property="og:title" content="ClassNote">
     <meta property="og:description" content="Registrate para poder acceder a la mejor plataforma con contenido educativo :D!">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/1095442990492819637/1095892423550435400/ico.png">
-
+     <!--CLASSNOTE V1.03-->
 </head>
 <body>
 
@@ -66,7 +66,7 @@
             <input type="text" placeholder="Usuario" name="usuario">
             <input type="password" placeholder="Contraseña" name="contrasena">
         </div>
-        <button type="submit">Regístrarse</button>
+        <button type="submit">Reg  ístrarse</button>
     </form>
 </div>
 

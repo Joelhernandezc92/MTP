@@ -1,0 +1,55 @@
+.blur-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .blur-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .blur-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .blur-content img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .blur-content p {
+    font-size: 18px;
+  }
+  
+
+
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .blur-image {
+    animation: zoomAnimation 4s infinite;
+  }
+  

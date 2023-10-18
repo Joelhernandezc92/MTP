@@ -225,7 +225,85 @@ html{
     opacity: 1;
     color: $principal;
 }
-
+//-------------------------------------------
+//Seccion Ultimos Proyectos
+//-------------------------------------------
+.ultimos-proyectos a{
+    text-decoration: none;
+}
+.ultimos-proyectos a h4{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: $texto;
+}
+.ultimos-proyectos .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.ultimos-proyectos .owl-nav{
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+}
+.ultimos-proyectos .container .owl-carousel .owl-nav .owl-prev,
+.ultimos-proyectos .container .owl-carousel .owl-nav .owl-next{
+    font-size: 3rem;
+    margin:  0 .5rem;
+    color: $principal;
+    transition: all .5s ease;
+}
+.ultimos-proyectos .container .owl-carousel .owl-nav .owl-prev:hover,
+.ultimos-proyectos .container .owl-carousel .owl-nav .owl-next:hover{
+    color: $secundario;
+}
+//-------------------------------------------
+//Seccion Pie de Pagina
+//-------------------------------------------
+.piedepagina{
+    background: $texto;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+}
+.piedepagina .redes-sociales{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.piedepagina .redes-sociales a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .5rem;
+    opacity: .7;
+    transition: all .5s ease;
+}
+.piedepagina .redes-sociales a:hover{
+    opacity: 1;
+}
+.ir-arriba{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $principal;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    display: none;
+    transition: all .5s ease;
+}
+.ir-arriba:hover,
+.ir-arriba:focus{
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+}
+//-------------------------------------------
+//Estilos paginas nosotros
+//-------------------------------------------
 .paginas-internas .bienvenidos{
     height: 50vh;
 }

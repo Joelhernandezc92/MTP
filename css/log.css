@@ -10,16 +10,11 @@
 body{
     /*INICIO FONDO NOTE*/
     height: 100vh;
-    background: linear-gradient(45deg, #7c8ce4  , #7b71c1  , #7c74cc  , #7c7dd4  , #7c7ccc ,  #7c74cc  );
-    animation: gradient-animation 15s ease infinite;
     background-size: 800% 800%;
-    transition: background 1s ease-in-out;
-
-
-    /*FIN FONDO NOTE*/
-
-
+    background-image: url("favicon.ico");
+    background-repeat: repeat;
 }
+
 
 
 
