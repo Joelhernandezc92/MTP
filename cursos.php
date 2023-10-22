@@ -47,12 +47,15 @@
             </form>
             <nav id="menu-principal" class="collapse">
                     <ul>
-                        <li ><a href="indexloged.php">Inicio</a></li>
+                        <li><a href="indexloged.php">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li><a href="admisionesloged.php">Admisiones</a></li>
+                        <li><a href="admisiones.php">Admisiones</a></li>
+                        <li ><a href="aulavirtual.php">Aula virtual</a></li>
+                        <li class="active"><a href="cursos.php">Cursos</a></li>
                     </ul>
                 </nav>
+
 
         </div>
 </body>

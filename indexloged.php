@@ -37,6 +37,8 @@ mysqli_close($conexion);
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/events.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    
 <style>
   .container button img{
     width: 43px;
@@ -99,8 +101,8 @@ mysqli_close($conexion);
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
                         <li><a href="admisiones.html">Admisiones</a></li>
-                        <li><a href="admisiones.html">Aula virtual</a></li>
-                        <li><a href="admisiones.html">Cursos</a></li>
+                        <li><a href="aulavirtual.html">Aula virtual</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
                     </ul>
                 </nav>
 
