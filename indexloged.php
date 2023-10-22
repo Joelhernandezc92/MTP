@@ -141,7 +141,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/612-da254406/Admisiones%20%281%29.JPG" alt="Imagen 1">
 			  <h3>Admisiones</h3>
-        <a href="admisiones.html">
+        <a href="admisiones.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -149,7 +149,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/614-2eb514a7/INSTALACIONES%20%281%29.JPG" alt="Imagen 2">
 			  <h3>Instalaciones</h3>
-        <a href="instalacion.html">
+        <a href="instalacion.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -157,7 +157,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/626-4e530f04/EDUCACION%20BASICA%20%281%29.JPG" alt="Imagen 3">
 			  <h3>Educación Básica</h3>
-        <a href="edubasica.html">
+        <a href="edubasica.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -166,7 +166,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/627-b67314d1/bach%20tecnico.jpg" alt="Imagen 3">
 			  <h3>Bachillerato Técnico</h3>
-        <a href="bachtecnico.html">
+        <a href="bachtecnico.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
     
@@ -174,33 +174,34 @@ mysqli_close($conexion);
 		</div>
 	  </section>
 
+
  
 
     <main class="servicios py-1">
         <div class="container" id="menuserv">
-            <!--Tirulo de sección-->
+
             <h2  class="h2 text-center font-weight-bold">Menu</h2>
             <div class="row" id="imgarticle">
-                <!--Sección lateral izquierda-->
+
                 <article  class="col-md-4 wow bounceInLeft">
                     <img src="assets/page fotos/FOTOS REALES/historia/historia.jpg" alt="historia">
                     <h3><a href="#">Historia</a></h3>
                     <p class="d-none d-md-flex">Montepiedra desarrolla todas sus actividades con los principios de la doctrina católica y con el máximo respeto hacia la libertad de las conciencias.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="historia.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
-                <!--Sección central-->
+
                 <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
                     <img src="https://www.montepiedra.edu.ec/web/image/589-79c807b6/Mision.JPG" alt="mision y vision">
                     <h3><a href="#">Misión & Visión</a></h3>
                     <p class="d-none d-md-flex">Conoce la misión de la Unidad Educativa Montepiedra y hacia donde queremos llegar en el mundo de la educación.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="misionyvision.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
-                <!--Sección lateral derecha-->
+
                 <article class="col-md-4 wow bounceInRight">
                     <img src="https://www.montepiedra.edu.ec/web/image/580-0f1ff68a/Consejo%20ejecutivo.JPG" alt="consejo Ejecutivo">
                     <h3><a href="#">Consejo Ejecutivo</a></h3>
                     <p class="d-none d-md-flex">Conoce a todos los profesionales que trabajan atrás de este gran proyecto educativo.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="consejoejecutivo.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
             </div>
         </div>

@@ -158,21 +158,21 @@ mysqli_close($conexion);
                     <img src="assets/page fotos/FOTOS REALES/historia/historia.jpg" alt="historia">
                     <h3><a href="#">Historia</a></h3>
                     <p class="d-none d-md-flex">Montepiedra desarrolla todas sus actividades con los principios de la doctrina católica y con el máximo respeto hacia la libertad de las conciencias.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="historia.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
                 <!--Sección central-->
                 <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
                     <img src="https://www.montepiedra.edu.ec/web/image/589-79c807b6/Mision.JPG" alt="mision y vision">
                     <h3><a href="#">Misión & Visión</a></h3>
                     <p class="d-none d-md-flex">Conoce la misión de la Unidad Educativa Montepiedra y hacia donde queremos llegar en el mundo de la educación.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="misionyvision.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
                 <!--Sección lateral derecha-->
                 <article class="col-md-4 wow bounceInRight">
                     <img src="https://www.montepiedra.edu.ec/web/image/580-0f1ff68a/Consejo%20ejecutivo.JPG" alt="consejo Ejecutivo">
                     <h3><a href="#">Consejo Ejecutivo</a></h3>
                     <p class="d-none d-md-flex">Conoce a todos los profesionales que trabajan atrás de este gran proyecto educativo.</p>
-                    <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                    <a href="consejoejecutivo.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                 </article>
             </div>
         </div>
