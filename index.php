@@ -8,7 +8,7 @@ include 'php/conexion_be.php';
 $usuario = $_SESSION['usuario'];
 
 if(isset($_SESSION['usuario'])){
-  header("location: indexloged.php");
+  header("location: logpages\indexloged.php");
 }
 
 
@@ -28,9 +28,9 @@ mysqli_close($conexion);
 
 <head>
     <title>Unidad Educativa Montepiedra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
