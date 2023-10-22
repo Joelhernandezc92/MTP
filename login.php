@@ -19,12 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/log.css">
-
-
-<meta property="og:title" content="ClassNote">
+    <meta property="og:title" content="ClassNote">
     <meta property="og:description" content="Registrate para poder acceder a la mejor plataforma con contenido educativo :D!">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/1095442990492819637/1095892423550435400/ico.png">
-     <!--CLASSNOTE V1.03-->
+
 </head>
 <body>
 

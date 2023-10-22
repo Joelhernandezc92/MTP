@@ -8,10 +8,8 @@ include 'php/conexion_be.php';
 $usuario = $_SESSION['usuario'];
 
 if(isset($_SESSION['usuario'])){
-  header("location: logpages\indexloged.php");
+  header("location: indexloged.php");
 }
-
-
 
 
 $query = "SELECT nombre_completo FROM usuarios WHERE usuario = '$usuario'";
@@ -74,7 +72,7 @@ mysqli_close($conexion);
                         <li class="active"><a href="index.html">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li><a href="admisiones.html">Admisiones</a></li>
+                        <li><a href="admisiones.php">Admisiones</a></li>
                     </ul>
                 </nav>
 
@@ -115,7 +113,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/612-da254406/Admisiones%20%281%29.JPG" alt="Imagen 1">
 			  <h3>Admisiones</h3>
-        <a href="admisiones.html">
+        <a href="admisiones.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -123,7 +121,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/614-2eb514a7/INSTALACIONES%20%281%29.JPG" alt="Imagen 2">
 			  <h3>Instalaciones</h3>
-        <a href="instalacion.html">
+        <a href="instalacion.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -131,7 +129,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/626-4e530f04/EDUCACION%20BASICA%20%281%29.JPG" alt="Imagen 3">
 			  <h3>Educación Básica</h3>
-        <a href="edubasica.html">
+        <a href="edubasica.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -140,7 +138,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/627-b67314d1/bach%20tecnico.jpg" alt="Imagen 3">
 			  <h3>Bachillerato Técnico</h3>
-        <a href="bachtecnico.html">
+        <a href="bachtecnico.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
     

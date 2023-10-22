@@ -53,13 +53,14 @@
                 </div>
             </form>
             <nav id="menu-principal" class="collapse">
-                <ul>
-                    <li ><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html#ofa">Oferta Académica</a></li>
-                    <li ><a href="eventonoticias.html" >Eventos y Noticias</a></li>
-                    <li  class="active"><a href="contacto.html" >Admisiones</a></li>
-                </ul>
-            </nav>
+                    <ul>
+                        <li ><a href="indexloged.php">Inicio</a></li>
+                        <li><a href="#ofa">Oferta Académica</a></li>
+                        <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
+                        <li class="active"><a href="admisiones.php">Admisiones</a></li>
+                    </ul>
+                </nav>
+
 
         </div>
 
