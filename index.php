@@ -59,7 +59,7 @@ mysqli_close($conexion);
                 <a href="index.html" class="logo">
                     <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
                 </a>
-                <button type="button" class="boton-buscar" >
+                <button class="boton-buscar" >
                   <a href="login.php">
                   <img src="page fotos/guest-user.png"></a>
                 </button>

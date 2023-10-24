@@ -11,7 +11,7 @@ body{
     /*INICIO FONDO NOTE*/
     height: 100vh;
     background-size: 800% 800%;
-    background-image: url("favicon.ico");
+
     background-repeat: repeat;
 }
 
@@ -42,7 +42,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: #7c64b4;
+    background-color: #025939;
 
 }
 
@@ -110,7 +110,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #9898ff;
+    color: #025939;
 }
 
 .contenedor__login-register form input{
@@ -182,53 +182,6 @@ main{
         position: relative;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

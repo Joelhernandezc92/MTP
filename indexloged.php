@@ -26,7 +26,7 @@ mysqli_close($conexion);
     <title>Unidad Educativa Montepiedra</title>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
@@ -80,7 +80,7 @@ mysqli_close($conexion);
                   <form action="#" id="bloque-buscar" class="collapse text-center">
                     <div class="contenedor-bloque-buscar">
                       <p><?php echo $usuario; ?></p>
-                      <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                      <button type="button"  data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
                         <box-icon name='chevron-left'></box-icon>
                       </button>
                       <a href="php/cerrar_sesion.php">
@@ -100,9 +100,9 @@ mysqli_close($conexion);
                         <li class="active"><a href="index.html">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li><a href="admisiones.html">Admisiones</a></li>
-                        <li><a href="aulavirtual.html">Aula virtual</a></li>
-                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="admisiones.php">Admisiones</a></li>
+                        <li><a href="aulavirtual.php">Aula virtual</a></li>
+                        <li><a href="cursos.php">Cursos</a></li>
                     </ul>
                 </nav>
 

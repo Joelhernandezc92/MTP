@@ -19,10 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/log.css">
-    <meta property="og:title" content="ClassNote">
-    <meta property="og:description" content="Registrate para poder acceder a la mejor plataforma con contenido educativo :D!">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1095442990492819637/1095892423550435400/ico.png">
-
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
 
@@ -45,7 +42,7 @@
     <div class="contenedor__login-register">
     <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
         <div class="contenedor__campo">
-            <img src="logo/ico.png" alt="imagen de inicio de sesión" style="display: block; margin: 0 auto; width: 27%; position: relative; margin-top: -34px">
+            <img src="favicon.ico" alt="imagen de inicio de sesión" style="display: block; margin: 0 auto; width: 27%; position: relative; margin-top: -34px">
         </div>
         <h2>Iniciar Sesión</h2>
         <input type="text" placeholder="Correo Electronico" name="correo">
@@ -55,7 +52,7 @@
 
     <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
         <div class="contenedor__campo">
-            <img src="logo/ico.png" alt="imagen de inicio de sesión" style="display: block; margin: 0 auto; width: 27%; margin-top: -35px;">
+            <img src="favicon.ico" alt="imagen de inicio de sesión" style="display: block; margin: 0 auto; width: 27%; margin-top: -35px;">
         </div>
         <h2>Regístrarse</h2>
         <input type="text" placeholder="Nombre completo" name="nombre_completo">
@@ -64,7 +61,7 @@
             <input type="text" placeholder="Usuario" name="usuario">
             <input type="password" placeholder="Contraseña" name="contrasena">
         </div>
-        <button type="submit">Reg  ístrarse</button>
+        <button type="submit">Regístrarse</button>
     </form>
 </div>
 

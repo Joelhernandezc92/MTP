@@ -7,12 +7,8 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
- 
-
-    
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -22,46 +18,43 @@
 
 
     <style>
-        footer {
-            color: black;
+    .container button img{
+    width: 43px;
+  }
 
-        }
     </style>
 
 
 </head>
 <body>
-    <header class="encabezado fixed-top" role="banner" id="encabezado">
-        <div id="info-box">
-            <p>Email: <a href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=">+593 4 600 5800</a></p>
-          </div>
-          
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
-            </a>
-            <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-               <i class="fas fa-search"></i>
-            </button>
-            <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
-               <i class="fas fa-bars" aria-hidden="true"></i>
-           </button>
-            <form action="#" id="bloque-buscar" class="collapse">
-                <div class="contenedor-bloque-buscar">
-                    <input type="text" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </div>
-            </form>
-            <nav id="menu-principal" class="collapse">
+
+        <div class="encabezado fixed-top">
+            <div id="info-box">
+                <p>Email: <a target="_blank" href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=" target="_blank" >+593 4 600 5800</a></p>
+              </div>
+              
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
+                </a>
+                <button type="button" class="boton-buscar" >
+                  <a href="login.php">
+                  <img src="page fotos/guest-user.png"></a>
+                </button>
+                <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+              </button>
+
+                <nav id="menu-principal" class="collapse">
                     <ul>
-                        <li ><a href="index.php">Inicio</a></li>
+                        <li class="active"><a href="index.php">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li class="active"><a href="admisiones.php">Admisiones</a></li>
+                        <li><a href="admisiones.php">Admisiones</a></li>
                     </ul>
                 </nav>
 
-        </div>
+            </div>
 
 
         <main class="servicios py-1">
@@ -71,9 +64,8 @@
                 <div class="row" id="imgarticle">
                     <!--Sección lateral izquierda-->
                     <article  class="col-md-4 wow bounceInLeft">
-                        <img src="assets/page fotos/FOTOS REALES/" alt="historia">
+                        <img src="assets/page fotos/FOTOS REALES/admisiones.JPG" >
                         <h3><a href="#">Formulario de admisiones</a></h3>
-                                           
                         <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro a 7mo grado EGB</a>
                         <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 8vo a l0mo grado EGB</a>
                     </article>
