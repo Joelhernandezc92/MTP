@@ -57,7 +57,6 @@ mysqli_close($conexion);
     margin-left: 5px;
   }
 
-
 </style>
 
 </head>
@@ -81,7 +80,7 @@ mysqli_close($conexion);
                     <div class="contenedor-bloque-buscar">
                       <p><?php echo $usuario; ?></p>
                       <button type="button"  data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-                        <box-icon name='chevron-left'></box-icon>
+                        <box-icon class="ss" name='chevron-left'></box-icon>
                       </button>
                       <a href="php/cerrar_sesion.php">
                         <button type="button" class="boton-buscar">
@@ -100,7 +99,7 @@ mysqli_close($conexion);
                         <li class="active"><a href="index.html">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li><a href="admisiones.php">Admisiones</a></li>
+                        <li><a href="admisionesloged.php">Admisiones</a></li>
                         <li><a href="aulavirtual.php">Aula virtual</a></li>
                         <li><a href="cursos.php">Cursos</a></li>
                     </ul>
@@ -289,21 +288,21 @@ mysqli_close($conexion);
       <div class="footer-section">
         <h3>Accesos</h3>
         <ul>
-          <li>Inicio</li>
-          <li>Historia</li>
-          <li>Misión &Visión</li>
-          <li>Consejo Ejecutivo</li>
-          <li>Protección a menores</li>
+          <a href="indexloged.php"><li>Inicio</li></a>
+          <a href="historialoged.php"><li>Historia</li></a>
+          <a href="misionyvisionloged.php"><li>Misión &Visión</li></a>
+          <a href="consejoejecutivo.php"><li>Consejo Ejecutivo</li></a>
+          <a href="proteccionamenores.php"><li>Protección a menores</li></a>
         </ul>
       </div>
   
       <div class="footer-section">
         <h3>Servicios</h3>
         <ul>
-          <li>Admisiones</li>
-          <li>Instalaciones</li>
-          <li>Educación Básica</li>
-          <li>Bachillerato Técnico</li>
+          <a href="admisionesloged.php"><li>Admisiones</li></a>
+          <a href="instalacion.php"><li>Instalaciones</li></a>
+          <a href="edubasicaloged.php"><li>Educación Básica</li></a>
+          <li><a href="bachtecnicologed.php">Bachillerato Técnico</a></li>
         </ul>
       </div>
   

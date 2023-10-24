@@ -7,12 +7,8 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
- 
-
-    
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -22,47 +18,58 @@
 
 
     <style>
-        footer {
-            color: black;
+    .container button img{
+    width: 43px;
+  }
 
-        }
     </style>
 
 
 </head>
 <body>
-    <header class="encabezado fixed-top" role="banner" id="encabezado">
-        <div id="info-box">
-            <p>Email: <a href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=">+593 4 600 5800</a></p>
-          </div>
-          
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
-            </a>
-            <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-               <i class="fas fa-search"></i>
-            </button>
-            <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
-               <i class="fas fa-bars" aria-hidden="true"></i>
-           </button>
-            <form action="#" id="bloque-buscar" class="collapse">
-                <div class="contenedor-bloque-buscar">
-                    <input type="text" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </div>
-            </form>
-            <nav id="menu-principal" class="collapse">
+
+        <div class="encabezado fixed-top">
+            <div id="info-box">
+                <p>Email: <a target="_blank" href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=" target="_blank" >+593 4 600 5800</a></p>
+              </div>
+              
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
+                </a>
+                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                    <img src="page fotos/guest-user.png" alt="Inicio de sesión">
+                  </button>
+                  
+                  <form action="#" id="bloque-buscar" class="collapse text-center">
+                    <div class="contenedor-bloque-buscar">
+                      <p><?php echo $usuario; ?></p>
+                      <button type="button"  data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                        <box-icon name='chevron-left'></box-icon>
+                      </button>
+                      <a href="php/cerrar_sesion.php">
+                        <button type="button" class="boton-buscar">
+                            <box-icon name='log-out' type='solid' ></box-icon>
+                        </button>
+                      </a>
+                    </div>
+                  </form>
+                <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+              </button>
+
+                <nav id="menu-principal" class="collapse">
                     <ul>
-                        <li ><a href="indexloged.php">Inicio</a></li>
+                        <li class="active"><a href="index.php">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li class="active"><a href="admisiones.php">Admisiones</a></li>
+                        <li><a href="admisionesloged.php">Admisiones</a></li>
+                        <li><a href="aulavirtual.php">Aula virtual</a></li>
+                        <li><a href="cursos.php">Cursos</a></li>
                     </ul>
                 </nav>
 
-
-        </div>
+            </div>
 
 
         <main class="servicios py-1">
@@ -72,9 +79,8 @@
                 <div class="row" id="imgarticle">
                     <!--Sección lateral izquierda-->
                     <article  class="col-md-4 wow bounceInLeft">
-                        <img src="assets/page fotos/FOTOS REALES/" alt="historia">
+                        <img src="" >
                         <h3><a href="#">Formulario de admisiones</a></h3>
-                                           
                         <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro a 7mo grado EGB</a>
                         <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 8vo a l0mo grado EGB</a>
                     </article>
@@ -133,50 +139,5 @@
 </body>
 
 
-<footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Accesos</h3>
-        <ul>
-          <li>Inicio</li>
-          <li>Historia</li>
-          <li>Misión &Visión</li>
-          <li>Consejo Ejecutivo</li>
-          <li>Protección a menores</li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h3>Servicios</h3>
-        <ul>
-          <li>Admisiones</li>
-          <li>Instalaciones</li>
-          <li>Educación Básica</li>
-          <li>Bachillerato Técnico</li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h3>Contacto</h3>
-        <p>info@montepiedra.edu.ec</p>
-        <p>+593 4 600 5800</p>
-        <p>Km 6 ½ Vía Daule</p>
-        <p>Guayaquil - Ecuador</p>
-      </div>
-  
-      <div class="footer-section">
-        <h3>Síguenos en:</h3>
-        <ul class="social-media-links">
 
-          <li><a href="https://www.facebook.com/UnidadEducativaMontepiedra">Facebook</a></li>
-          <li><a href="https://twitter.com/UEM_info">Twitter</a></li>
-          <li><a href="https://www.linkedin.com/company/montepiedra/">Linkedin</a></li>
-        </ul>
-        <h3><a href="https://idukay.net/#/login">Agenda Virtual</a></h3>
-        <p>© 2023 OrstedSolutions.</p>
-      </div>
-    </div>
-
-
-  </footer>
 </html>
