@@ -142,7 +142,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/612-da254406/Admisiones%20%281%29.JPG" alt="Imagen 1">
 			  <h3>Admisiones</h3>
-        <a href="admisiones.php">
+        <a href="admisionesloged.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -150,7 +150,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/614-2eb514a7/INSTALACIONES%20%281%29.JPG" alt="Imagen 2">
 			  <h3>Instalaciones</h3>
-        <a href="instalacion.php">
+        <a href="instalacionloged.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -158,7 +158,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/626-4e530f04/EDUCACION%20BASICA%20%281%29.JPG" alt="Imagen 3">
 			  <h3>Educación Básica</h3>
-        <a href="edubasica.php">
+        <a href="edubasicaloged.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
 		  </div>
@@ -167,7 +167,7 @@ mysqli_close($conexion);
 			<div class="menu-content-of">
 			  <img src="https://www.montepiedra.edu.ec/web/image/627-b67314d1/bach%20tecnico.jpg" alt="Imagen 3">
 			  <h3>Bachillerato Técnico</h3>
-        <a href="bachtecnico.php">
+        <a href="bachtecnicologed.php">
 			  <button class="menu-button-of">Ver más</button></a>
 			</div>
     
@@ -246,7 +246,6 @@ mysqli_close($conexion);
 	  </section>
 
 
-    <!--Carga de archivos js-->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

@@ -37,7 +37,7 @@
 img {
   width: 100%; /* Las imágenes se ajustarán al ancho de su contenedor */
   height: auto; /* Mantendrá la relación de aspecto original */
-  border-radius: 10px;
+ 
 }
 
 /* Estilos para el modal */
@@ -50,6 +50,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscurecido */
   overflow: auto;
+
 }
 
 .modal img {
@@ -59,6 +60,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 
 .close {
@@ -87,31 +89,44 @@ img {
 <body>
     <header class="encabezado fixed-top" role="banner" id="encabezado">
         <div id="info-box">
-            <p>Email: <a href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=">+593 4 600 5800</a></p>
+            <p>Email: <a target="_blank" href="mailto:info@montepiedra.edu.ec">info@montepiedra.edu.ec</a>   |   Teléfono: <a href="https://api.whatsapp.com/send/?phone=593958906944&text=" target="_blank" >+593 4 600 5800</a></p>
           </div>
           
-         
-          <div class="container">
-            <a href="indexloged.php" class="logo">
+        <div class="container">
+            <a href="index.html" class="logo">
                 <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
             </a>
-            <button class="boton-buscar" >
-              <a href="login.php">
-              <img src="page fotos/guest-user.png"></a>
-            </button>
+            <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                <img src="page fotos/guest-user.png" alt="Inicio de sesión">
+              </button>
+              
+              <form action="#" id="bloque-buscar" class="collapse text-center">
+                <div class="contenedor-bloque-buscar">
+                  <p><?php echo $usuario; ?></p>
+                  <button type="button"  data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                    <box-icon class="ss" name='chevron-left'></box-icon>
+                  </button>
+                  <a href="php/cerrar_sesion.php">
+                    <button type="button" class="boton-buscar">
+                        <box-icon name='log-out' type='solid' ></box-icon>
+                    </button>
+                  </a>
+                </div>
+              </form>
+              
             <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
             <i class="fas fa-bars" aria-hidden="true"></i>
-          </button>
-
-            <nav id="menu-principal" class="collapse">
-                <ul>
-                    <li ><a href="index.php">Inicio</a></li>
-                    <li><a href="index.php#ofa">Oferta Académica</a></li>
-                    <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                    <li><a href="admisiones.php">Admisiones</a></li>
-                </ul>
-            </nav>
-
+           </button>
+           <nav id="menu-principal" class="collapse">
+            <ul>
+                <li ><a href="indexloged.php">Inicio</a></li>
+                <li><a href="indexloged.php#ofa">Oferta Académica</a></li>
+                <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
+                <li><a href="admisionesloged.php">Admisiones</a></li>
+                <li><a href="aulavirtual.php">Aula virtual</a></li>
+                <li><a href="cursos.php">Cursos</a></li>
+            </ul>
+        </nav>
         </div>
 </header>
 <div class="grid-container">

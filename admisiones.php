@@ -18,9 +18,103 @@
 
 
     <style>
-    .container button img{
-    width: 43px;
-  }
+
+html{
+  background-color: #fff;
+}
+
+footer {
+  color: #000;
+padding: 40px 0;
+margin-left: 70px;
+}
+
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-section {
+flex-basis: 33.33%;
+}
+
+.footer-section h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 8px;
+}
+
+.footer-section p {
+margin-bottom: 8px;
+}
+
+.social-media-links {
+display: flex;
+}
+
+.social-media-links li {
+margin-right: 10px;
+}
+
+.social-media-links a {
+color: #000;
+text-decoration: none;
+}
+
+.footer-section h3 a {
+font-size: 20px;
+text-decoration: none;
+color: #000;
+}
+
+.banner {
+position: relative;
+width: 100%;
+}
+
+.banner img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.banner-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #ffffff;
+width: 100%;
+}
+
+/* Media query para ajustar el footer en pantallas pequeñas (celulares) */
+@media screen and (max-width: 768px) {
+.footer-container {
+  flex-wrap: wrap; /* Ajustamos los elementos en una sola columna */
+}
+
+.footer-section {
+  flex-basis: 100%; /* Una sección en una fila */
+}
+}
+
+.btn btn-light d-none d-md-flex{
+  margin-bottom: 100px;
+}
+
 
     </style>
 
@@ -47,41 +141,39 @@
 
                 <nav id="menu-principal" class="collapse">
                     <ul>
-                        <li class="active"><a href="index.php">Inicio</a></li>
+                        <li ><a href="index.php">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
                         <li><a target="_blank" href="https://mtpnewsonline.com/">Eventos y Noticias</a></li>
-                        <li><a href="admisiones.php">Admisiones</a></li>
+                        <li class="active"><a href="admisiones.php">Admisiones</a></li>
                     </ul>
                 </nav>
 
             </div>
 
+</div>
 
         <main class="servicios py-1">
             <div class="container" id="menuserv">
-                <!--Tirulo de sección-->
                 <h2  class="h2 text-center font-weight-bold">Admisiones</h2>
                 <div class="row" id="imgarticle">
-                    <!--Sección lateral izquierda-->
-                    <article  class="col-md-4 wow bounceInLeft">
-                        <img src="assets/page fotos/FOTOS REALES/admisiones.JPG" >
+                <article  class="col-md-4 wow bounceInLeft">
+                        <img src="https://www.montepiedra.edu.ec/web/image/612-da254406/Admisiones%20%281%29.JPG" >
                         <h3><a href="#">Formulario de admisiones</a></h3>
-                        <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro a 7mo grado EGB</a>
-                        <a href="#" class="btn btn-light d-none d-md-flex">Llenar formulario de 8vo a l0mo grado EGB</a>
+                        <div class="button-a">
+                        <a target="_blank" href="https://forms.gle/trAdCBuXcLs9ZJTP8" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro a 7mo grado EGB</a>
+                        <a target="_blank" href="https://forms.gle/pMoL6LsmbqYg9dL89" class="btn btn-light d-none d-md-flex">Llenar formulario de 8vo a l0mo grado EGB</a>
+                        <a target="_blank" href="https://forms.gle/hnL3m9pdAcdkeDX59" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro Bachillerato</a>
+                    </div>
                     </article>
-                    <!--Sección central-->
                     <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
                         <img src="https://www.montepiedra.edu.ec/web/image/589-79c807b6/Mision.JPG" alt="mision y vision">
                         <h3><a href="#">¿Necesitas ayuda financiera?</a></h3>
                  
                         <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
                     </article>
-                    <!--Sección lateral derecha-->
                     <article class="col-md-4 wow bounceInRight">
                         <img src="https://www.montepiedra.edu.ec/web/image/580-0f1ff68a/Consejo%20ejecutivo.JPG" alt="consejo Ejecutivo">
                         <h3><a href="#">Matrícula & Pensión</a></h3>
-              
-                        
                         <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
                     </article>
                 </div>

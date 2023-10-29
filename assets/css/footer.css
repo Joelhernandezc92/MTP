@@ -1,72 +1,76 @@
-/* Estilos generales para el footer */
-footer {
-  background-color: #ffffff;
+
+html{
+    background-color: #fff;
+  }
+  
+  footer {
+    color: #000;
   padding: 40px 0;
   margin-left: 70px;
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.footer-section {
+  }
+  
+  .footer-section {
   flex-basis: 33.33%;
-}
-
-.footer-section h3 {
+  }
+  
+  .footer-section h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
-}
-
-.footer-section ul {
+  }
+  
+  .footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.footer-section ul li {
+  }
+  
+  .footer-section ul li {
   margin-bottom: 8px;
-}
-
-.footer-section p {
+  }
+  
+  .footer-section p {
   margin-bottom: 8px;
-}
-
-.social-media-links {
+  }
+  
+  .social-media-links {
   display: flex;
-}
-
-.social-media-links li {
+  }
+  
+  .social-media-links li {
   margin-right: 10px;
-}
-
-.social-media-links a {
+  }
+  
+  .social-media-links a {
   color: #000;
   text-decoration: none;
-}
-
-.footer-section h3 a {
+  }
+  
+  .footer-section h3 a {
   font-size: 20px;
   text-decoration: none;
   color: #000;
-}
-
-.banner {
+  }
+  
+  .banner {
   position: relative;
   width: 100%;
-}
-
-.banner img {
+  }
+  
+  .banner img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.banner-text {
+  }
+  
+  .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,10 +78,10 @@ footer {
   text-align: center;
   color: #ffffff;
   width: 100%;
-}
-
-/* Media query para ajustar el footer en pantallas pequeñas (celulares) */
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Media query para ajustar el footer en pantallas pequeñas (celulares) */
+  @media screen and (max-width: 768px) {
   .footer-container {
     flex-wrap: wrap; /* Ajustamos los elementos en una sola columna */
   }
@@ -85,4 +89,5 @@ footer {
   .footer-section {
     flex-basis: 100%; /* Una sección en una fila */
   }
-}
+  }
+  

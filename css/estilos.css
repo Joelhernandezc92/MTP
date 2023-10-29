@@ -1,10 +1,10 @@
 html {
   font-size: 18px; 
+  background-color: #fff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  
   color: #111111; }
 
 .bienvenidos {
@@ -339,7 +339,7 @@ body {
   color: #025939; }
 
 .piedepagina {
-  background: #111111;
+
   color: #fff;
   text-align: center;
   font-size: .9rem; }
@@ -469,11 +469,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-
-
-
-
-  /*Seccion servicios*/
   .servicios article {
     margin: 1rem 0;
     -webkit-box-orient: vertical;
@@ -602,6 +597,4 @@ body {
   .servicios {
 
     background-size: cover; } }
-
-/*# sourceMappingURL=estilos.css.map */
 

@@ -30,7 +30,7 @@
           </div>
           
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="indexloged.phg" class="logo">
                 <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
             </a>
             <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
