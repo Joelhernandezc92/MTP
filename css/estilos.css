@@ -34,6 +34,10 @@ body {
 
 }
 
+a li{
+  text-decoration: none;
+}
+
 
 .encabezado.fondo-menu {
   background: #ffffff;

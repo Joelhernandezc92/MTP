@@ -28,8 +28,8 @@ mysqli_close($conexion);
     <title>Unidad Educativa Montepiedra</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
     <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -56,7 +56,7 @@ mysqli_close($conexion);
               </div>
               
             <div class="container">
-                <a href="index.html" class="logo">
+                <a href="#" class="logo">
                     <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
                 </a>
                 <button class="boton-buscar" >
