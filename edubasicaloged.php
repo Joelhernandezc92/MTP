@@ -90,26 +90,27 @@
 
 
 </body>
-<footer  style="background-color: #ffffff;">
+
+<footer>
     <div class="footer-container">
       <div class="footer-section">
         <h3>Accesos</h3>
         <ul>
-          <li>Inicio</li>
-          <li>Historia</li>
-          <li>Misión &Visión</li>
-          <li>Consejo Ejecutivo</li>
-          <li>Protección a menores</li>
+          <a href="indexloged.php"><li>Inicio</li></a>
+          <a href="historialoged.php"><li>Historia</li></a>
+          <a href="misionyvisionloged.php"><li>Misión &Visión</li></a>
+          <a href="consejoejecutivo.php"><li>Consejo Ejecutivo</li></a>
+          <a href="proteccionamenores.php"><li>Protección a menores</li></a>
         </ul>
       </div>
   
       <div class="footer-section">
         <h3>Servicios</h3>
         <ul>
-          <li>Admisiones</li>
-          <li>Instalaciones</li>
-          <li>Educación Básica</li>
-          <li>Bachillerato Técnico</li>
+          <a href="admisionesloged.php"><li>Admisiones</li></a>
+          <a href="instalacion.php"><li>Instalaciones</li></a>
+          <a href="edubasicaloged.php"><li>Educación Básica</li></a>
+          <li><a href="bachtecnicologed.php">Bachillerato Técnico</a></li>
         </ul>
       </div>
   
@@ -136,4 +137,6 @@
 
 
   </footer>
+
+
 </html>

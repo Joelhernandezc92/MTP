@@ -3,15 +3,10 @@
   font-family: "Poppins" , sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   text-decoration: none;
 }
 
-body{
-    height: 100vh;
-    background-size: 800% 800%;
-    background-repeat: repeat;
-}
 
 
 
@@ -38,8 +33,8 @@ main{
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+
+
     background-color: #025939;
 
 }

@@ -22,33 +22,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  font-family: "Poppins" , sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
 
 
 
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  background-image: url('favicon.ico'); /* Ruta a tu favicon.ico */
-  background-size: auto; /* El tamaño de la imagen de fondo se ajustará automáticamente */
-  background-repeat: 100%; /* Usar "space" para espaciar las repeticiones */
-  height: 100vh;
+
+ background-image: url('page fotos/login2.jpg'); 
+  
+
+  
+
   
 }
 
-
-
-
-/* Resto de tu CSS... */
 
 
 

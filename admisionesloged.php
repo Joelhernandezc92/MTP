@@ -1,24 +1,3 @@
-<?php
-session_start();
-
-
-
-include 'php/conexion_be.php';
-
-$usuario = $_SESSION['usuario'];
-if(!isset($_SESSION['usuario'])){
-    header('Location: index.php');
-}
-
-$query = "SELECT nombre_completo FROM usuarios WHERE usuario = '$usuario'";
-
-$resultado = mysqli_query($conexion, $query);
-
-$row = mysqli_fetch_array($resultado);
-
-
-mysqli_close($conexion);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,34 +15,11 @@ mysqli_close($conexion);
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/events.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
     <style>
-    .container button img{
-    width: 43px;
-  }
-  .container button img{
-    width: 43px;
-  }
 
-.contenedor-bloque-buscar{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    margin: 0;
-    width: auto;
-    
-  }
-  .contenedor-bloque-buscar p{
-    margin-top: 10px;
-    margin-left: 5px;
-  }
-article a .button-a{
-    margin-top: 100px;
-  }
-
-
-  html{
+html{
   background-color: #fff;
 }
 
@@ -144,7 +100,16 @@ color: #ffffff;
 width: 100%;
 }
 
+.servicios py-1{
+  margin-top: 100px;
+}
 
+.button-a a{
+  margin-top: 100px;
+}
+.admmenu{
+  margin-top: 120px;
+}
 @media screen and (max-width: 768px) {
 .footer-container {
   flex-wrap: wrap; 
@@ -154,6 +119,11 @@ width: 100%;
   flex-basis: 100%; 
 }
 }
+
+.btn btn-light d-none d-md-flex{
+  margin-bottom: 1000px;
+}
+
 
     </style>
 
@@ -170,26 +140,14 @@ width: 100%;
                 <a href="index.html" class="logo">
                     <img src="./favicon.ico" alt="Logo del titulo" style="width: 30px;">
                 </a>
-                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-                    <img src="page fotos/guest-user.png" alt="Inicio de sesión">
-                  </button>
-                  <form action="#" id="bloque-buscar" class="collapse text-center">
-                    <div class="contenedor-bloque-buscar">
-                      <p><?php echo $usuario; ?></p>
-                      <button type="button"  data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
-                        <box-icon name='chevron-left'></box-icon>
-                      </button>
-                      <a href="php/cerrar_sesion.php">
-                        <button type="button" class="boton-buscar">
-                            <box-icon name='log-out' type='solid' ></box-icon>
-                        </button>
-                      </a>
-                    </div>
-                  </form>
+                <button type="button" class="boton-buscar" >
+                  <a href="login.php">
+                  <img src="page fotos/guest-user.png"></a>
+                </button>
                 <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
                 <i class="fas fa-bars" aria-hidden="true"></i>
               </button>
-                <nav id="menu-principal" class="collapse">
+              <nav id="menu-principal" class="collapse">
                     <ul>
                         <li><a href="index.php">Inicio</a></li>
                         <li><a href="#ofa">Oferta Académica</a></li>
@@ -199,25 +157,29 @@ width: 100%;
                         <li><a href="cursos.php">Cursos</a></li>
                     </ul>
                 </nav>
+
             </div>
+
+</div>
+<div class="admmenu">
         <main class="servicios py-1">
             <div class="container" id="menuserv">
                 <h2  class="h2 text-center font-weight-bold">Admisiones</h2>
                 <div class="row" id="imgarticle">
-                    <article  class="col-md-4 wow bounceInLeft">
+                <article  class="col-md-4 wow bounceInLeft">
                         <img src="https://www.montepiedra.edu.ec/web/image/612-da254406/Admisiones%20%281%29.JPG" >
                         <h3><a href="#">Formulario de admisiones</a></h3>
                         <div class="button-a">
                         <a target="_blank" href="https://forms.gle/trAdCBuXcLs9ZJTP8" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro a 7mo grado EGB</a>
                         <a target="_blank" href="https://forms.gle/pMoL6LsmbqYg9dL89" class="btn btn-light d-none d-md-flex">Llenar formulario de 8vo a l0mo grado EGB</a>
                         <a target="_blank" href="https://forms.gle/hnL3m9pdAcdkeDX59" class="btn btn-light d-none d-md-flex">Llenar formulario de 1ro Bachillerato</a>
-                    </div>
+                        </div>
                     </article>
                     <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
                         <img src="https://www.montepiedra.edu.ec/web/image/589-79c807b6/Mision.JPG" alt="mision y vision">
                         <h3><a href="#">¿Necesitas ayuda financiera?</a></h3>
                  
-                        <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+                        <a href="necesitasayudafinanciera.php" class="btn btn-light d-none d-md-flex">Más Información</a>
                     </article>
                     <article class="col-md-4 wow bounceInRight">
                         <img src="https://www.montepiedra.edu.ec/web/image/580-0f1ff68a/Consejo%20ejecutivo.JPG" alt="consejo Ejecutivo">
@@ -227,6 +189,8 @@ width: 100%;
                 </div>
             </div>
         </main>
+
+      </div>
         <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
@@ -261,57 +225,55 @@ width: 100%;
 <script src="js/wow.min.js"></script>
 <script src="js/smooth-scroll.min.js"></script>
 <script src="js/sitio.js"></script>
-
-
 </body>
 
 
 <footer>
- 
     <div class="footer-container">
-        <div class="footer-section">
-          <h3>Accesos</h3>
-          <ul>
-            <li>Inicio</li>
-            <li>Historia</li>
-            <li>Misión &Visión</li>
-            <li>Consejo Ejecutivo</li>
-            <li>Protección a menores</li>
-          </ul>
-        </div>
-    
-        <div class="footer-section">
-          <h3>Servicios</h3>
-          <ul>
-            <li>Admisiones</li>
-            <li>Instalaciones</li>
-            <li>Educación Básica</li>
-            <li>Bachillerato Técnico</li>
-          </ul>
-        </div>
-    
-        <div class="footer-section">
-          <h3>Contacto</h3>
-          <p>info@montepiedra.edu.ec</p>
-          <p>+593 4 600 5800</p>
-          <p>Km 6 ½ Vía Daule</p>
-          <p>Guayaquil - Ecuador</p>
-        </div>
-    
-        <div class="footer-section">
-          <h3>Síguenos en:</h3>
-          <ul class="social-media-links">
-    
-            <li><a href="https://www.facebook.com/UnidadEducativaMontepiedra">Facebook</a></li>
-            <li><a href="https://twitter.com/UEM_info">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/company/montepiedra/">Linkedin</a></li>
-          </ul>
-          <h3><a href="https://idukay.net/#/login">Agenda Virtual</a></h3>
-          <p>© 2023 OrstedSolutions.</p>
-        </div>
+      <div class="footer-section">
+        <h3>Accesos</h3>
+        <ul>
+          <a href="indexloged.php"><li>Inicio</li></a>
+          <a href="historialoged.php"><li>Historia</li></a>
+          <a href="misionyvisionloged.php"><li>Misión &Visión</li></a>
+          <a href="consejoejecutivo.php"><li>Consejo Ejecutivo</li></a>
+          <a href="proteccionamenores.php"><li>Protección a menores</li></a>
+        </ul>
       </div>
-  </footer> 
+  
+      <div class="footer-section">
+        <h3>Servicios</h3>
+        <ul>
+          <a href="admisionesloged.php"><li>Admisiones</li></a>
+          <a href="instalacion.php"><li>Instalaciones</li></a>
+          <a href="edubasicaloged.php"><li>Educación Básica</li></a>
+          <li><a href="bachtecnicologed.php">Bachillerato Técnico</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>info@montepiedra.edu.ec</p>
+        <p>+593 4 600 5800</p>
+        <p>Km 6 ½ Vía Daule</p>
+        <p>Guayaquil - Ecuador</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Síguenos en:</h3>
+        <ul class="social-media-links">
 
+          <li><a href="https://www.facebook.com/UnidadEducativaMontepiedra">Facebook</a></li>
+          <li><a href="https://twitter.com/UEM_info">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/montepiedra/">Linkedin</a></li>
+        </ul>
+        <h3><a href="https://idukay.net/#/login">Agenda Virtual</a></h3>
+        <p>© 2023 OrstedSolutions.</p>
+      </div>
+    </div>
+
+
+  </footer>
 
 
 </html>

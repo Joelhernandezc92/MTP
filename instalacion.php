@@ -181,6 +181,16 @@ img {
     <img src="page fotos/INSTALACION/WhatsApp Image 2022-09-23 at 2.35.18 PM.jpeg" alt="Imagen 10">
 </div>
 
+
+<div id="modal-11" class="modal">
+    <span class="close" onclick="closeModal('modal-11')">&times;</span>
+    <img src="page fotos\INSTALACION\WhatsApp Image 2022-09-23 at 2.35.19 PM.jpeg" alt="Imagen 10">
+</div>
+
+<div id="modal-12" class="modal">
+    <span class="close" onclick="closeModal('modal-12')">&times;</span>
+    <img src="page fotos/INSTALACION/WhatsApp Image 2022-09-23 at 2.35.18 PM.jpeg" alt="Imagen 10">
+</div>
     <script>
 
   function openModal(modalId) {

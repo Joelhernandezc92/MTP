@@ -196,6 +196,7 @@ mysqli_close($conexion);
 
 
 <img src="https://www.montepiedra.edu.ec/web/image/1634-07c28286/promocion2.jpeg" alt="imagen mtp">
+<img src="page fotos/menuin.jpg" alt="imagen mtp">
 
 
 

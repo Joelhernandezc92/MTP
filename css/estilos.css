@@ -8,7 +8,7 @@ body {
   color: #111111; }
 
 .bienvenidos {
-  background: url("../assets/banner-image.jpg") no-repeat center top;
+  background: url("https://media.discordapp.net/attachments/1163895580225974402/1173365551133900911/banner-image.JPG?ex=6563b0d3&is=65513bd3&hm=3c58bb6d5a9cd2c1520f793ad806941a0a4f0d7c79135d7b8b45a160e36139f0&=&width=1017&height=676") no-repeat center top;
   color: #fff;
   background-size: cover;
   background-attachment: fixed !important;
@@ -45,16 +45,16 @@ a li{
 
 }
 #qn{
-  margin-top: 50px;
+  margin-top: 10px;
 
 }
 
 
 .info-bar {
-
-  padding: 10px;
+  padding: 2px;
   display: flex;
   justify-content: space-between;
+  margin-top: 1px;
   align-items: center;
 }
 
@@ -297,10 +297,7 @@ a li{
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.servicios h3 a:hover::after {
-  left: -.5rem;
-  opacity: 1;
-  color: #12AFAF; }
+
 
 .ultimos-proyectos a {
   text-decoration: none; }
@@ -360,24 +357,6 @@ a li{
   padding: 0; }
 
 
-.ir-arriba {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 3rem;
-  color: #03734A;
-  text-decoration: none;
-  z-index: 99999;
-  line-height: 0;
-  display: none;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
-
-.ir-arriba:hover,
-.ir-arriba:focus {
-  outline: 0;
-  text-decoration: none;
-  color: #fff; }
 
 .paginas-internas .bienvenidos {
   height: 50vh; }
@@ -456,13 +435,13 @@ a li{
     margin: 0 0 0 0; }
 
   #menu-principal ul li a {
-    padding: .8rem;
+    padding: .10rem;
     text-transform: capitalize;
-    margin: 0 .3rem;
+    margin: 0 .10rem;
     border-top: 0px;
-    border-bottom: 4px solid transparent;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
+    border-bottom: 5px solid transparent;
+    -webkit-transition: all .10s ease;
+    transition: all .10s ease; }
 
   #menu-principal ul li.active a,
   #menu-principal ul li a:hover {
@@ -545,7 +524,7 @@ a li{
     font-size: 16px; }
 
   .bienvenidos {
-    background: url("../assets/banner-image.jpg") no-repeat center top;
+    background: url("https://media.discordapp.net/attachments/1163895580225974402/1173365551133900911/banner-image.JPG?ex=6563b0d3&is=65513bd3&hm=3c58bb6d5a9cd2c1520f793ad806941a0a4f0d7c79135d7b8b45a160e36139f0&=&width=1017&height=676") no-repeat center top;
     background-size: cover; }
 
   .tu-mejor-eleccion ul li {
