@@ -37,11 +37,16 @@ body {
 a li{
   text-decoration: none;
 }
-
+.container{
+  padding: 4px;
+}
+.container li{
+  margin-right: 10px;
+}
 
 .encabezado.fondo-menu {
   background: #ffffff;
-  padding: 1rem 0; 
+  padding: 10rem 0; 
 
 }
 #qn{
@@ -51,7 +56,7 @@ a li{
 
 
 .info-bar {
-  padding: 2px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 1px;
@@ -500,7 +505,6 @@ a li{
   .servicios .btn-light {
     margin-top: auto; }
 
-  /*Pagina servicios*/
   .paginas-internas .lista-servicios .col-md-4 {
     display: -webkit-box;
     display: -ms-flexbox;

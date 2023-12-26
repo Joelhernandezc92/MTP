@@ -3,13 +3,8 @@
   font-family: "Poppins" , sans-serif;
   margin: 0;
   padding: 0;
-
   text-decoration: none;
 }
-
-
-
-
 
 main{
     width: 100%;
@@ -77,8 +72,6 @@ main{
     background: #fff;
     color: #164a37;
 }
-
-/*Formularios*/
 
 .contenedor__login-register{
     display: flex;
